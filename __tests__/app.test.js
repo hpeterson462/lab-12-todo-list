@@ -10,7 +10,8 @@ describe('routes', () => {
   const newTodo = {
     name: 'wash dishes',
     completed: true,
-    owner_id: 2,
+    id: 4,
+    owner_id: 2
   };
 
   beforeAll(async done => {
@@ -41,12 +42,13 @@ describe('routes', () => {
     done();
   });
 
-  test('returns all todos for the user when hitting GET /todos', async (done) => {
+  test.only('returns all todos for the user when hitting GET /todos', async (done) => {
     const expected = [
       {
         name: 'wash dishes',
         completed: true,
-        owner_id: 2,
+        id: 4,
+        owner_id: 2
       },
     ];
 
