@@ -45,10 +45,10 @@ describe('routes', () => {
   test.only('returns all todos for the user when hitting GET /todos', async (done) => {
     const expected = [
       {
-        name: 'wash dishes',
         completed: true,
         id: 4,
-        owner_id: 2
+        name: 'wash dishes',
+        owner_id: 2,
       },
     ];
 
